@@ -1,0 +1,50 @@
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+    background: linear-gradient(rgb(163, 47, 88), rgb(48, 143, 138));
+    color: #fff;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+
+
+.text-cyan-blue {
+  color: #096fea;
+}
+
+.display-5 {
+  font-size: 2.0rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.btn-white {
+    color: rgb(163, 47, 88);
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+hr {
+    border-color: white;
+    border-width: 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
