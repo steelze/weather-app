@@ -1,6 +1,4 @@
 # Weather App
-Basic PWA Weather App to see weather predictions for the week based on user location
-# Currency Converter
 
 ### Description
 Weather App is a bascic progressive web app that allows users to get weather predictions for the week based on their location.
