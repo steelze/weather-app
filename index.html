@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Get weather forecast for your location.">
+    <meta name="author" content="Odunayo Ogungbure (sogungbure@gmail.com)">
+    <link rel="shortcut icon" type="image/ico" href="icons/favicon.ico"/>
+    <title>Weather Forecast</title>	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-extend.css">
+    <link rel="stylesheet" href="css/master_style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-startup-image" href="icons/apple-icon-60x60.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="icons/apple-icon-72x72.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="icons/apple-icon-76x76.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="icons/apple-icon-114x114.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="icons/apple-icon-144x144.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="icons/apple-icon-152x152.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="icons/apple-icon-180x180.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="icons/apple-icon-57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="icons/apple-icon-60x60.png" sizes="60x60">
+    <link rel="apple-touch-icon" href="icons/apple-icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="icons/apple-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="icons/apple-icon-114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="icons/apple-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="icons/apple-icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="icons/apple-icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="icons/apple-icon-180x180.png" sizes="180x180">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-70x70.png">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-150x150.png">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-310x310.png">
+    <meta name="theme-color" content="#1e88e5">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+    <div id="overlay">
+        <div id="text"><div class="loader"></div></div>
+    </div>
+    <div class="box bg-info text-center">
+        <div class="box-body">
+            <div class="p-5" id="page-content">
+                <h3 class="white location-timezone"></h3>
+                <p class="weather-day-date mb-30">
+                    <span class="mr-5 location-date"></span>
+                </p>
+                <div class="mb-30 weather-icon">
+                    <canvas class="mr-40 text-top icon" class="icon" width="90" height="90"></canvas>
+                    <div class="inline-block">
+                        <span class="font-size-50 temperature-degree degree"></span>
+                        <p class="text-left temperature-description"></p>
+                    </div>
+                </div>
+                <!-- OTHER DAYS -->
+                <div class="row no-space other-days">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <footer class="footer">
+        <p>poweredby <a href="http://darksky.net" target="blank">Dark Sky API</a></p>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/skycons.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

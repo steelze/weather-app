@@ -1,0 +1,293 @@
+body,
+html {
+    height: 100vh;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #1e88e5;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5;
+    text-shadow: none
+}
+
+.info-box-text {
+    text-transform: uppercase
+}
+
+.box-body:after {
+    clear: both
+}
+
+body {
+    font-weight: 400;
+    font-size: 13px;
+    color: #67757c
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400
+}
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+    margin-bottom: 10px
+}
+
+h1 {
+    line-height: 40px;
+    font-size: 36px
+}
+
+h2 {
+    line-height: 36px;
+    font-size: 24px
+}
+
+h3 {
+    line-height: 30px;
+    font-size: 21px
+}
+
+h4 {
+    line-height: 22px;
+    font-size: 18px
+}
+
+h5 {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 400
+}
+
+h6 {
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400
+}
+
+.box {
+    position: relative;
+    border-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    background: #fff;
+    border-radius: 0;
+    padding: 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.box-info {
+    background-color: #1e88e5
+}
+
+.box .border-left {
+    border-left: 1px solid #f4f4f4
+}
+
+.box-body {
+    padding: 1.25rem;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.box-body>:last-child {
+    margin-bottom: 0
+}
+
+.weather-day {
+    border-left: 1px solid rgba(0, 0, 0, .05)
+}
+
+.weather-icon canvas {
+    width: 90px;
+    height: 90px
+}
+
+.info-box,
+.info-box-icon {
+    display: block
+}
+
+.info-box {
+    min-height: 100px;
+    background: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .05)
+}
+
+.info-box-icon {
+    float: left;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 74px;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 100%
+}
+
+.info-box-text {
+    display: block;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 300
+}
+
+.inline {
+    display: inline
+}
+
+.border-info {
+    border-color: #1e88e5 !important
+}
+
+.border-white {
+    border-color: #fff !important
+}
+
+.bg-info {
+    background-color: #1e88e5 !important;
+    color: #fff
+}
+
+.bg-white {
+    background-color: #fff !important
+}
+
+.bg-info {
+    background-color: #1e88e5 !important;
+    color: #fff
+}
+
+.bg-white {
+    background-color: #fff !important
+}
+
+.text-info {
+    color: #1e88e5 !important
+}
+
+.text-white {
+    color: #fff
+}
+
+.text-info {
+    color: #398bf7
+}
+
+.no-border {
+    border: 0
+}
+
+.no-radius {
+    border-radius: 0
+}
+
+.text-info {
+    color: #bda230 !important
+}
+
+
+/* https://www.w3schools.com/howto/howto_css_overlay.asp */
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+/* https://codepen.io/designify-me/pen/yyGpNP */
+.loader {
+    width:100px;
+    height:100px;
+    display:inline-block;
+    padding:0px;
+    opacity:0.5;
+    border:3px solid #09acfd;
+    -webkit-animation: loader 1s ease-in-out infinite alternate;
+    animation: loader 1s ease-in-out infinite alternate;
+}
+
+.loader:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #09acfd;
+}
+
+.loader:after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid #09acfd;
+}
+
+@keyframes loader {
+    from {transform: rotate(0deg) scale(1,1);border-radius:0px;}
+    to {transform: rotate(360deg) scale(0, 0);border-radius:50px;}
+}
+@-webkit-keyframes loader {
+    from {-webkit-transform: rotate(0deg) scale(1, 1);border-radius:0px;}
+    to {-webkit-transform: rotate(360deg) scale(0,0 );border-radius:50px;}
+}
