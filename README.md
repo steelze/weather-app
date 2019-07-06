@@ -12,7 +12,7 @@ Weather App is a bascic progressive web app that allows users to get weather pre
 * Darksky API [Darksky API](https://darksky.net)
 
 ## Usage
-Visit the application url
+Visit the application url https://www.predictsky.com/
 
 
 ## Setup
