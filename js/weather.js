@@ -8,7 +8,7 @@ const page_content = document.querySelector('#page-content');
 const canvas = document.querySelector('.weather-icon canvas');
 const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat']; 
 const fullDays = ['Sunday', 'Monday', 'Tuesday', 'Wedday', 'Thursday', 'Friday', 'Saturday']; 
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']; 
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']; 
 
 function isLoading() {
     document.getElementById("overlay").style.display = "block";
@@ -60,7 +60,7 @@ function fetchWeatherData(api) {
         temperature_description.textContent = summary;
         const date = unixToDate(time);
         location_timezone.innerHTML = `<span class="font-size-30">${country}, </span>${continent}`;
-        location_date.innerHTML = `<span class="font-size-30">${fullDays[date.getDay()]} ${months[date.getMonth()]}, ${date.getDay()} ${date.getFullYear()} </span>`;
+        location_date.innerHTML = `<span class="font-size-30">${fullDays[date.getDay()]} ${months[date.getMonth()]}, ${date.getDate()} ${date.getFullYear()} </span>`;
         setOtherDays(data.daily.data).then(() => {
             document.querySelectorAll('.icon').forEach(ele => {
                 setIcons(ele.dataset.icon, ele);
